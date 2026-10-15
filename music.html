@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>telephonegirl</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <div class="floating">
+            <h1>telephone girl</h1>
+    </div>
+    <div class="navCol">
+      <h1>navigation</h1>
+      <hr>
+      <p style="text-align: center;"><a href="index.html">home</a></p>
+      <p style="text-align: center;"><a href="music.html">music</a></p>
+      <p style="text-align: center;"><a href="commissions.html">commissions</a></p>
+      <p style="text-align: center;"><a href="updates.html">updates</a></p>
+      <p style="text-align: center;"><a href="credits.html">credits</a></p>
+
+    </div>
+    <div class="infoBox">
+        <h1>music</h1>
+        <hr>
+        <di data-title="Music">
+			<div id="aWrap">
+		<!-- (A) PLAY/PAUSE BUTTON -->
+		<button id="aPlay" enabled><span id="aPlayIco" class="material-icons">
+			&#9655
+		</span></button>
+		
+		<!-- (B) TIME -->
+		<div id="aCron">
+			<span id="aNow"></span> / <span id="aTime"></span>
+		</div>
+		
+		<!-- (C) SEEK BAR -->
+		<input id="aSeek" type="range" min="0" value="0" step="1" disabled>
+
+		<div id="aWrap">
+		<!-- (D) VOLUME SLIDE -->
+		<span id="aVolIco" class="material-icons">&#128362</span>
+		<input id="aVolume" type="range" min="0" max="1" value="1" step="0.1" disabled>
+		</div>
+		<!-- (E) PLAYLIST -->
+		<div id="aList"></div>
+		</div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,182 @@
+/* Color Codes 
+#7C444F (Dark Brown)
+#9F5255 (Light Brown)
+#E16A54 (Orange)
+#F39E60 (Pumpkin Yellow)
+*/
+
+body {
+    background-color: #7C444F;
+    margin:0;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px black;
+    font-family: grapeSoda;
+    text-align: center;
+    font-size: 48px;
+}
+
+p {
+    font-size: 32px;
+}
+
+hr {
+    color: white;
+}
+
+a {
+    color: #F39E60;
+}
+
+.infoBox {
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-family: grapeSoda;
+    color: white;
+    width: 60%;
+    background-color: #9F5255;
+    margin: auto;
+}
+
+.navCol {
+    float: left;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-family: grapeSoda;
+    color: white;
+    width: 12.5%;
+    margin-left: 32px;
+    background-color: #9F5255;
+    
+}
+
+@font-face {
+    font-family: grapeSoda;
+    src: url(GrapeSoda.ttf);
+}
+
+*::selection {
+  background: #da7a7b;
+  color: #ffffff;
+}
+
+
+.floating {
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+/* Music Player CSS */
+/* (A) MATERIAL ICONS */
+.material-icons {
+  font-size: 24px;
+  color: #F39E60;
+}
+
+/* (B) WRAPPER */
+#aWrap {
+  font-family: grapeSoda, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* (C) PLAY/PAUSE BUTTON */
+#aPlay {
+  padding-left: 16px;
+  margin: 0;
+  background: 0;
+  border: 0;
+}
+
+/* (D) TIME */
+#aCron {
+  font-size: 24px;
+  color: #F39E60;
+  margin: 0 10px;
+}
+
+/* (E) RANGE SLIDERS */
+/* (E1) HIDE DEFAULT */
+#aWrap input[type="range"] {
+  box-sizing: border-box;
+  appearance: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  background: 0;
+}
+#aWrap input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+}
+
+/* (E2) CUSTOM SLIDER TRACK */
+#aWrap input[type=range]::-webkit-slider-runnable-track {
+  background: #F39E60;
+}
+#aWrap input[type=range]::-moz-range-track {
+  background: #F39E60;
+}
+
+/* (E3) CUSTOM SLIDER BUTTON */
+#aWrap input[type=range]::-webkit-slider-thumb {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  border: 0;
+  background: #fff;
+}
+#aWrap input[type=range]::-moz-range-thumb {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  border: 0;
+  background: #fff;
+}
+
+/* (F) VOLUME */
+#aVolIco {
+  cursor: url("cursor.png"), pointer;
+  margin-right: 48px;
+}
+
+/* (G) PLAYLIST */
+#aList {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  color: #F39E60;
+  border: 2px solid #F39E60;
+  margin: 6px;
+  border-radius: 2px;
+  font-size: 24px;
+}
+.aRow {
+  padding: 10px 0;
+}
+aRow.now {
+  color: #F39E60;
+}
