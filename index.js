@@ -3,6 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
   let playlist = [
   {name: "bus pass - 1 # fog", src: "assets/music/buspass/fog.mp3"},
   {name: "bus pass - 2 # engine", src: "assets/music/buspass/engine.mp3"},
+  {name: "bus pass - 3 # window", src: "assets/music/buspass/window.mp3"},
   {name: "GMTK 2026 - Unused 4, i--", src: "assets/music/UnusedSong4.mp3"},  
   {name: "GMTK 2026 - Unused 2, i--", src: "assets/music/UnusedSong2.mp3"},  
   {name: "GMTK 2026 - Unused 1, i--", src: "assets/music/UnusedSong1.mp3"},  
@@ -133,5 +134,3 @@ window.addEventListener("DOMContentLoaded", () => {
     aSeek.disabled = true;
   });
 });
-
-// in what world does this not commit
